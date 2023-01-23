@@ -14,7 +14,7 @@ require_once 'includes/database.php';
 
     if ($rowCount > 0) {
         while ($row = mysqli_fetch_assoc($result)) {
-            echo $row['username'] . "<br>";
+            echo $row['username'] . "<br>";   // Afficher le BDD de username
         }
     } else {
         echo "No results found";
