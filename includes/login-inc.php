@@ -41,9 +41,9 @@ if (isset($_POST['submit'])) {
                 exit();
             }
         }
-    // }  else {
-    //             header("Location: ../index.php?error=accessforbidden");
-    //             exit();
-            }
-}
+    }
+     } else {
+             header("Location: ../index.php?error=accessforbidden");
+             exit();
+       }
 ?>

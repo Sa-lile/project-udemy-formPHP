@@ -1,5 +1,7 @@
 <?php
-require_once 'includes/database.php';
+session_start();
+require_once 'database.php';
+require_once 'register-inc.php';
 ?>
 <html>
 
