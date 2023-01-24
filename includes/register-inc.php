@@ -4,9 +4,9 @@ if (isset($_POST['submit'])) {
     //Add database connection
     require 'database.php';
 
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-    $confirmPass = $_POST['confirmPassword'];
+    $username = htmlspecialchars($_POST['username']);
+    $password = htmlspecialchars($_POST['password']);
+    $confirmPass = htmlspecialchars($_POST['confirmPassword']);
 
     if (empty($username) || empty($password) || empty($confirmPass)) {
         header("Location: ../register.php?error=emptyfields&username=" . $username);
